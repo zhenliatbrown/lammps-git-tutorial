@@ -13,20 +13,20 @@
 
 #ifdef COMPUTE_CLASS
 
-ComputeStyle(ke,ComputeKE)
+ComputeStyle(vsq,ComputeVSQ)
 
 #else
 
-#ifndef LMP_COMPUTE_KE_H
-#define LMP_COMPUTE_KE_H
+#ifndef LMP_COMPUTE_VSQ_H
+#define LMP_COMPUTE_VSQ_H
 
 #include "compute.h"
 
 namespace LAMMPS_NS {
 
-class ComputeKE : public Compute {
+class ComputeVSQ : public Compute {
  public:
-  ComputeKE(class LAMMPS *, int, char **);
+  ComputeVSQ(class LAMMPS *, int, char **);
   void init();
   double compute_scalar();
 
